@@ -1,0 +1,142 @@
+@import "@fontsource-variable/inter";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    color-scheme: light;
+  }
+  html {
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+  body {
+    @apply bg-ink-50 text-ink-900 font-sans text-[14px] leading-relaxed;
+  }
+  ::selection {
+    @apply bg-accent-200 text-accent-900;
+  }
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: #cbd5e1 transparent;
+  }
+  *::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  *::-webkit-scrollbar-thumb {
+    background: #cbd5e1;
+    border-radius: 999px;
+    border: 2px solid transparent;
+    background-clip: content-box;
+  }
+  *::-webkit-scrollbar-thumb:hover {
+    background: #94a3b8;
+    background-clip: content-box;
+  }
+  :focus-visible {
+    @apply outline-none ring-2 ring-accent-500/50 ring-offset-2 ring-offset-white;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-lg border px-3.5 py-2 text-[13px] font-medium transition-all duration-150 disabled:cursor-not-allowed disabled:opacity-45;
+  }
+  .btn-primary {
+    @apply border-accent-700 bg-accent-700 text-white shadow-sm hover:bg-accent-800 hover:border-accent-800 active:translate-y-px;
+  }
+  .btn-secondary {
+    @apply border-ink-200 bg-white text-ink-700 shadow-sm hover:border-ink-300 hover:bg-ink-50 active:translate-y-px;
+  }
+  .btn-ghost {
+    @apply border-transparent bg-transparent text-ink-600 hover:bg-ink-100 hover:text-ink-900;
+  }
+  .btn-ai {
+    @apply border-ai-600 bg-ai-600 text-white shadow-sm hover:bg-ai-700 hover:border-ai-700 active:translate-y-px;
+  }
+  .btn-sm {
+    @apply px-2.5 py-1.5 text-[12px];
+  }
+  .card {
+    @apply rounded-xl border border-ink-200/80 bg-white shadow-card;
+  }
+  .panel {
+    @apply rounded-xl border border-ink-200 bg-white;
+  }
+  .label {
+    @apply mb-1.5 flex items-center gap-1.5 text-[11.5px] font-semibold uppercase tracking-[0.05em] text-ink-500;
+  }
+  .input {
+    @apply w-full rounded-lg border border-ink-200 bg-white px-3 py-2 text-[13.5px] text-ink-900 placeholder:text-ink-400 transition-colors focus:border-accent-500 focus:outline-none focus:ring-2 focus:ring-accent-500/15 disabled:bg-ink-50;
+  }
+  .textarea {
+    @apply input min-h-[84px] resize-y leading-relaxed;
+  }
+  .select {
+    @apply input cursor-pointer appearance-none bg-[url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2212%22%20height%3D%2212%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22%2364748b%22%20stroke-width%3D%222%22%3E%3Cpath%20d%3D%22m6%209%206%206%206-6%22%2F%3E%3C%2Fsvg%3E')] bg-[length:12px] bg-[right_10px_center] bg-no-repeat pr-8;
+  }
+  .badge {
+    @apply inline-flex items-center gap-1 rounded-md border px-1.5 py-0.5 text-[10.5px] font-semibold uppercase tracking-wide;
+  }
+  .chip {
+    @apply inline-flex items-center gap-1 rounded-md border border-ink-200 bg-ink-50 px-1.5 py-0.5 font-mono text-[10.5px] text-ink-600;
+  }
+  .section-card {
+    @apply card scroll-mt-24 overflow-hidden;
+  }
+  .section-head {
+    @apply flex items-center justify-between gap-4 border-b border-ink-100 px-5 py-4;
+  }
+  .section-body {
+    @apply px-5 py-5;
+  }
+  .ai-tint {
+    background-image: linear-gradient(90deg, rgba(245, 243, 255, 0.9), rgba(255, 255, 255, 0));
+  }
+  .ai-field {
+    @apply border-l-2 border-l-ai-400 bg-ai-50/40;
+  }
+  .human-field {
+    @apply border-l-2 border-l-amber-300/70;
+  }
+  .skeleton {
+    @apply animate-pulse rounded bg-ink-200/70;
+  }
+  .stat-value {
+    @apply text-[26px] font-semibold leading-none tracking-tight text-ink-900;
+  }
+  .nav-rail-item {
+    @apply flex w-full items-start gap-2 rounded-lg px-2.5 py-2 text-left text-[12.5px] transition-colors;
+  }
+  .prose-answer {
+    @apply whitespace-pre-wrap text-[13px] leading-relaxed text-ink-700;
+  }
+}
+
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .shadow-inset-line {
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.6);
+  }
+}
+
+@media print {
+  .no-print {
+    display: none !important;
+  }
+  body {
+    background: white;
+  }
+  .section-card {
+    break-inside: avoid;
+    box-shadow: none;
+  }
+}

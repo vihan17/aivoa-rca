@@ -1,0 +1,16 @@
+fastapi>=0.115,<1.0
+uvicorn[standard]>=0.34,<1.0
+SQLAlchemy>=2.0.36,<2.1
+PyMySQL>=1.1.1
+psycopg[binary]>=3.2
+cryptography
+pydantic-settings>=2.7
+python-multipart
+pypdf>=5.1
+langgraph>=0.2.60,<0.4
+langchain-core>=0.3.30,<0.4
+langchain-groq>=0.2.3,<0.4
+groq>=0.13
+python-dotenv>=1.0
+reportlab>=4.2
+httpx>=0.28

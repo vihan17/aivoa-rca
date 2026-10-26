@@ -1,0 +1,35 @@
+From: Suresh Kulkarni <s.kulkarni@aivoa-api.example>
+To: Meera Krishnan <meera.krishnan@aivoa-api.example>
+Cc: Anita Rao <anita.rao@aivoa-api.example>; Rajesh Menon <rajesh.menon@aivoa-api.example>
+Date: Mon, 12 Oct 2026 18:42:11 +0530
+Subject: URGENT - OOS impurity result for AT-24118 and overdue calibration of TT-207
+
+Meera,
+
+QC release testing for batch AT-24118 failed today. Desfluoro atorvastatin is 0.42% w/w
+against the 0.30% limit, assay 97.1% w/w (spec 98.0-102.0%). I have placed the batch and
+retains under QA hold QA-H-2026-118 and stopped the rest of the campaign.
+
+Three things you should see before the investigation meeting tomorrow:
+
+1. The batch was dried for 9 h 30 min in VD-02, but the BPR limit is 8 h at 65-70 C. The
+   controller shows 66-68 C throughout, so on paper it looks compliant.
+
+2. The night shift recorded 79.4 C on the handheld reference thermometer at 06:40 on 09-Oct
+   and wrote "controller reading OK, continued". Nobody raised a deviation at the time.
+
+3. TT-207 was due for calibration on 15-Sep-2026. There is no calibration work order after
+   12-Mar-2026. We migrated to CMMS v8 on 01-Aug under CC-2026-041, and the change control
+   scope only covers asset master data and maintenance history - calibration schedule
+   validation was explicitly excluded.
+
+AT-24116 and AT-24117 from the same API lot and the same recovered solvent lot passed, so I
+do not think this is raw material. Lab system suitability was fine as well.
+
+Can you open the RCA today? I am worried about the other instruments migrated under the same
+change control. The calibration review already shows PT-114 and FT-208 also have no work
+orders after the migration.
+
+Thanks,
+Suresh
+QC Head, Unit 2

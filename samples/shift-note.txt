@@ -1,0 +1,15 @@
+UNIT 2 - NIGHT SHIFT HANDOVER NOTE
+
+Date: 09-Oct-2026, shift 02:00-14:00
+Area: Building B, Drying Room DR-04
+
+Batch AT-24118 drying continues in VD-02. Drying started 02:10. Controller showing 67 C.
+02:10 - trays loaded, vacuum -0.92 bar.
+06:40 - handheld reading at jacket outlet 79.4 C. Informed shift in-charge. Controller
+reading OK so continued.
+11:40 - drying completed, total 9 h 30 min. Trays sent for milling.
+Note: TT-207 calibration sticker shows next due 15-Sep-2026. Asked maintenance, no work
+order in the system. Shift in-charge said QA will look at it after release testing.
+
+R. Patil
+Night shift operator

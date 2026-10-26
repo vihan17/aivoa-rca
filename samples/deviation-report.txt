@@ -1,0 +1,77 @@
+AIVOA API MANUFACTURING — UNIT 2, PUNE
+Quality Assurance / Deviation Management
+
+Document: QA/DEV/2026/0142        Version: 1.0        Page 1 of 3
+
+DEVIATION REPORT — OUT OF SPECIFICATION RESULT, BATCH AT-24118
+
+1. IDENTIFICATION
+Deviation No: DEV-2026-0142
+Date of occurrence: 09-Oct-2026
+Date detected: 12-Oct-2026
+Detected by: Anita Rao, QC Analyst
+Department: Quality Control
+Site / Area: Unit 2, Building B, Drying Room DR-04
+Product: Atorvastatin Calcium USP (API), material code API-ATV-02
+Batch No: AT-24118        Batch size: 250 kg
+Process stage: Vacuum tray drying (final unit operation before milling)
+Equipment: Vacuum tray dryer VD-02; RTD temperature probe TT-207
+Classification (proposed): Major
+Deviation type: Unplanned
+
+2. DESCRIPTION
+During QC release testing on 12-Oct-2026, batch AT-24118 failed the specification for the
+specified impurity desfluoro atorvastatin at 0.42% w/w against a limit of not more than
+0.30% w/w. Assay was 97.1% w/w against 98.0-102.0% w/w. Total impurities were 0.71% w/w
+against a limit of not more than 1.0% w/w; all unspecified impurities were within limits.
+
+The batch was dried in VD-02 from 02:10 to 11:40 on 09-Oct-2026 (9 h 30 min). The BPR limit
+is not more than 8 h at 65-70 C. Controller temperatures recorded every 2 h were 66.2, 67.1,
+66.8, 67.4 and 67.0 C.
+
+At 06:40 on 09-Oct-2026 the night-shift operator recorded a handheld reference thermometer
+reading of 79.4 C at the jacket outlet and noted: "higher than controller, controller reading
+OK, continued".
+
+3. IMMEDIATE ACTION / CONTAINMENT
+- Batch AT-24118 and retain samples quarantined under QA hold QA-H-2026-118.
+- VD-02 blocked for use and campaign drying stopped.
+- QC initiated an OOS investigation under SOP QC-OOS-002.
+- No product from this batch has been released or distributed.
+
+4. IMPACT ASSESSMENT
+No patient exposure: the batch has not been released. Desfluoro atorvastatin is a known thermal
+degradant of atorvastatin. Batches dried on VD-02 after the last calibration date may be
+affected. AT-24116 and AT-24117, manufactured from the same API lot and the same recovered
+solvent lot, passed release.
+
+5. RECORDS REVIEWED (ATTACHMENTS)
+1. BPR AT-24118, pages 1-14, including drying log page 7 and handheld verification page 9.
+2. QC release data package AT-24118, including HPLC system suitability: resolution 2.4, tailing 1.08.
+3. Calibration certificate CAL-2025-8841 for RTD TT-207: last calibrated 15-Sep-2025, next due 15-Sep-2026.
+4. CMMS work-order export for TT-207: no calibration work order raised after 12-Mar-2026.
+5. Change control CC-2026-041, CMMS v6 to v8 migration, live 01-Aug-2026.
+6. SOP QA-SOP-114 rev 4, Drying Operation.
+7. Training record for operator R. Patil, trained 18-Nov-2024, no refresher since.
+8. Deviation history for VD-02: DEV-2025-031 and DEV-2026-009.
+9. Calibration programme review for CC-2026-041: 14 instruments migrated; 3 without work orders (TT-207, PT-114, FT-208).
+10. COA review: precursor lot RM-26-0912 and recovered toluene lot SOL-26-077 both within specification.
+
+6. INITIAL OBSERVATIONS
+- TT-207 was 24 days past its calibration due date when the batch was executed.
+- The BPR records the handheld check but has no field requiring a decision when the reading
+  differs from the controller.
+- Both previous VD-02 temperature deviations were closed with operator counselling; no
+  calibration or SOP review was performed.
+- The CC-2026-041 impact assessment explicitly excludes maintenance plan and calibration
+  schedule validation.
+
+7. PROPOSED INVESTIGATION SCOPE
+Drying step of AT-24118; calibration status of TT-207; all batches of any product dried on VD-02
+since 15-Sep-2026; impact of the CMMS migration on calibration schedules for the 14 migrated
+instruments.
+
+Prepared by: Anita Rao, QC Analyst            12-Oct-2026
+Reviewed by: S. Kulkarni, QC Head             12-Oct-2026
+
+CONFIDENTIAL — INTERNAL QUALITY RECORD — Page 1 of 3

@@ -1,0 +1,22 @@
+# Secrets
+backend/.env
+.env
+*.pem
+
+# Local environments and dependencies
+.venv/
+node_modules/
+backend/.venv/
+frontend/node_modules/
+**/__pycache__/
+*.pyc
+
+# Build and review artifacts
+frontend/dist/
+artifacts/
+release/
+*.zip
+
+# OS noise
+.DS_Store
+Thumbs.db

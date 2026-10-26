@@ -1,0 +1,29 @@
+# Render Blueprint: one Docker web service plus a managed Postgres database.
+# Dashboard -> New -> Blueprint -> connect this repo -> Apply.
+databases:
+  - name: aivoa-rca-db
+    databaseName: aivoa_rca
+    user: aivoa
+    plan: free
+
+services:
+  - type: web
+    name: aivoa-rca
+    runtime: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
+    healthCheckPath: /api/health
+    autoDeploy: true
+    envVars:
+      - key: ENVIRONMENT
+        value: production
+      - key: DATABASE_URL
+        fromDatabase:
+          name: aivoa-rca-db
+          property: connectionString
+      - key: AI_PROVIDER
+        value: auto
+      # Optional: set a gsk_... key for live Groq inference.
+      # Leave empty to keep the deterministic demo engine.
+      - key: GROQ_API_KEY
+        sync: false

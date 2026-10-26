@@ -1,0 +1,12 @@
+.git
+.gitignore
+**/node_modules
+**/.venv
+**/__pycache__
+**/*.pyc
+artifacts
+release
+frontend/dist
+backend/.env
+docs
+*.zip
